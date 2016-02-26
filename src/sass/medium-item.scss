@@ -1,0 +1,51 @@
+@import 'config';
+@import 'mixins';
+
+$medium-item-width-desktop: 100%/4;
+$medium-item-width-tablet: 100%/3;
+$medium-item-width-mobile: 100%;
+
+.medium-item {
+
+  height: $item-height;
+  position: relative;
+  padding: 0 $gutter-normal $gutter-normal;
+  box-sizing: border-box;
+
+  &:before {
+    background-color: $background-normal;
+    display: block;
+    height: $item-height - $gutter-normal;
+    content: '';
+  }
+
+  &:after {
+    display: inline-block;
+    @include center-absolute();
+  }
+
+  @media #{$break-point-desktop} {
+    width: $medium-item-width-desktop;
+
+    &:after {
+      content: '#{$medium-item-width-desktop}';
+    }
+  }
+
+  @media #{$break-point-tablet} {
+    width: $medium-item-width-tablet;
+
+    &:after {
+      content: '#{$medium-item-width-tablet}';
+    }
+  }
+
+  @media #{$break-point-mobile} {
+    width: $medium-item-width-mobile;
+
+    &:after {
+      content: '#{$medium-item-width-mobile}';
+    }
+  }
+
+}

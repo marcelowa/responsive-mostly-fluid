@@ -1,0 +1,11 @@
+@import 'config';
+@import 'reset';
+@import 'common-heading';
+@import 'horizontal-list';
+@import 'small-item';
+@import 'medium-item';
+
+body {
+  font-family: $font-common;
+  font-size: $font-size-normal;
+}

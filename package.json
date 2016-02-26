@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "author": "Marcelo Waisman",
+  "license": "CC0-1.0",
+  "name": "responsive-mostly-fluid-example",
+  "description": "A simple example of how to implement a responsive design using the mostly fluid technique, with different common element layouts",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "node-sass-middleware": "^0.9.7"
+  }
+}
